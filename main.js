@@ -25,7 +25,7 @@ container.appendChild(renderer.domElement);
 let block = undefined;
 
 const objLoader = new OBJLoader();
-objLoader.load("./teapot/teapot.obj", function (object) {
+objLoader.load("/3d-js-test/obj/teapot.obj", function (object) {
   object.traverse(function (node) {
     if (node.isMesh)
       node.material = new THREE.MeshPhongMaterial({ color: 0x0073ff });
